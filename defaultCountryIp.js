@@ -16,8 +16,6 @@ input.on("keyup change", function() {
   var intlNumber = input.intlTelInput("getNumber");
   
   if (intlNumber) {
-    input.attr("fullphone", intlNumber)
-  } else {
-    input.attr("fullphone", '')
+    input.val(intlNumber);
   }
 });
